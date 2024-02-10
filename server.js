@@ -11,7 +11,7 @@ const salt = 10;
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin:["login-page-backend-6hvw.vercel.app"],
+    origin:["https://login-page-backend-alpha.vercel.app/"],
     methods: ["POST", "GET"],
     credentials: true
 }));
