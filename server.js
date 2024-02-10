@@ -17,6 +17,10 @@ app.use(cors({
 }));
 app.use(cookieParser());
 
+app.get("/",(req,res)=>{
+  res.json("ok")
+})
+
 const db = mysql.createConnection({
   host: "sql6.freesqldatabase.com", // Update host
   user: "sql6683169", // Update database user
@@ -141,6 +145,6 @@ app.post("/UpdateProfile", verifyUser, (req, res) => {
     });
 });
 
-app.listen(8081, () => {
-    console.log("Running...");
-});
+// app.listen(8081, () => {
+//     console.log("Running...");
+// });
